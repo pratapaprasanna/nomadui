@@ -2,11 +2,8 @@ FROM node:12.0.0 as dev
 
 RUN npm install -g nodemon
 
-RUN mkdir --parents /tmp/yarn
+WORKDIR /app/
 
-ADD package.json /tmp/yarn
-ADD yarn.lock /tmp/yarn
-
-RUN cd /tmp/yarn && yarn install
+ADD . /app
 
 CMD CHOKIDAR_USEPOLLING=true && yarn build && yarn start

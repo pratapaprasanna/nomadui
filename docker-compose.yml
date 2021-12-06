@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  nomad:
+    image: nomadui_service_dev
+    restart: always
+    volumes:
+      - ./:/app
+    build: .
+    ports:
+      - 3000:3000
+    networks:
+      - default
+networks:
+  default:
+      external: false
+      name: auth_default
