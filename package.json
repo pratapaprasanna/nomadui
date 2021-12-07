@@ -7,10 +7,19 @@
   "author": "pratapaprasanna <pratapagoutham@gmail.com>",
   "license": "MIT",
   "private": true,
-  "scripts":{
+  "scripts": {
     "start": "nodemon src/index.js",
     "build": "yarn install",
     "format": "npx prettier --config .prettierrc --write */**/*.{tsx,graphql,js}",
     "lint": "npx prettier --config .prettierrc --check */**/*.{tsx,graphql,js}"
+  },
+  "dependencies": {
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "passport": "^0.5.0",
+    "passport-google-oauth": "^2.0.0"
   }
 }
