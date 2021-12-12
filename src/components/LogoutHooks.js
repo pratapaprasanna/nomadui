@@ -2,7 +2,7 @@ import React from 'react';
 import { useGoogleLogout } from 'react-google-login';
 
 const clientId =
-  '707788443358-u05p46nssla3l8tmn58tpo9r5sommgks.apps.googleusercontent.com';
+  '1034883885605-gvj78f1cg3urngprb0jjfr3p0olqh8tr.apps.googleusercontent.com';
 
 function LogoutHooks() {
   const onLogoutSuccess = (res) => {
