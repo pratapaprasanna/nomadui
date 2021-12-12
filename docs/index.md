@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+# nomadui
+UI for nomad
+# Stack
+- react-js
+- docker
+- docker-compose
 
-You can use the [editor on GitHub](https://github.com/pratapaprasanna/nomadui/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+# Steps to setup
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
+docker-compose up
+```
+or try the below incase you are facing some issues with creation
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+```
+docker-compose up --build --force-recreate
+```
+like below
 
-### Jekyll Themes
+<img width="1765" alt="Screenshot 2021-12-12 at 10 55 21 PM" src="https://user-images.githubusercontent.com/15846947/145722834-52103974-aabb-4826-af35-c7fbe2aca875.png">
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pratapaprasanna/nomadui/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<img width="1049" alt="Screenshot 2021-12-12 at 10 59 14 PM" src="https://user-images.githubusercontent.com/15846947/145722873-1c2e3928-78bc-410c-9cee-677abf6c1915.png">
 
-### Support or Contact
+Once done visit localhost:3000
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+If you are already logged in You should see something like this.
+
+You should see the google account details below in the console like follows
+
+<img width="1776" alt="Screenshot 2021-12-12 at 10 55 36 PM" src="https://user-images.githubusercontent.com/15846947/145722896-6486600a-9d1d-4afa-b516-0f1f2934767f.png">
+
+Incase you logged out of your google account.
+
+You can click on ```sign-up with google``` and following will be the sequence
+
+1- 
+
+<img width="1329" alt="Screenshot 2021-12-12 at 10 56 10 PM" src="https://user-images.githubusercontent.com/15846947/145722962-7bb2aa93-6a0f-49c8-8399-7796eba2abcc.png">
+
+2- 
+<img width="1665" alt="Screenshot 2021-12-12 at 10 56 23 PM" src="https://user-images.githubusercontent.com/15846947/145722974-fe1a0442-00f2-4905-b92b-83469727c82d.png">
+
+
