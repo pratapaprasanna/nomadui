@@ -22,6 +22,7 @@
     "docker-init": "cp --recursive --no-target-directory /tmp/yarn/node_modules/ node_modules",
     "format": "npx prettier --config /usr/local/.prettierrc --write */**/*.{tsx,graphql,js}",
     "lint": "npx prettier --config /usr/local/.prettierrc --check */**/*.{tsx,graphql,js}"
+    "cilint": "npx prettier --config .prettierrc --check */**/*.{tsx,graphql,js}"
   },
   "eslintConfig": {
     "extends": "react-app"
