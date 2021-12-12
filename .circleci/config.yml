@@ -30,5 +30,4 @@ jobs:
       - checkout
       - run: |
           yarn install
-          cp .prettierrc /usr/local/.prettierrc
-          yarn lint
+          yarn cilint
