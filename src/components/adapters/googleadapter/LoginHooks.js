@@ -1,18 +1,17 @@
 import React from 'react';
 import { useGoogleLogin } from 'react-google-login';
+import ReactDOM from 'react-dom';
+import Display from '../../HomeScreen/Homescreen';
 
-// refresh token
-import { refreshTokenSetup } from '../utils/refreshToken';
+import { refreshTokenSetup } from '../../../utils/refreshToken';
 
 const clientId = '1034883885605-gvj78f1cg3urngprb0jjfr3p0olqh8tr.apps.googleusercontent.com';
 
-function LoginHooks() {
+function GoogleLoginHooks() {
   const onSuccess = (res) => {
     console.log('Login Success: currentUser:', res.profileObj);
-    // alert(
-    //   `Logged in successfully welcome ${res.profileObj.name} 😍. \n See console for full profile object.`
-    // );
     refreshTokenSetup(res);
+    ReactDOM.render(<Display name={res.profileObj.name} />, document.getElementById('root'));
   };
 
   const onFailure = (res) => {
@@ -31,11 +30,13 @@ function LoginHooks() {
   });
 
   return (
-    <button onClick={signIn} className="button">
-      <img src="icons/google.svg" alt="google login" className="icon"></img>
-      <span className="buttonText"> Sign up with Google</span>
-    </button>
+    <div className="App">
+      <button onClick={signIn} className="button">
+        <img src="icons/google.svg" alt="google login" className="icon"></img>
+        <span className="buttonText"> Login with Google</span>
+      </button>
+    </div>
   );
 }
 
-export default LoginHooks;
+export default GoogleLoginHooks;

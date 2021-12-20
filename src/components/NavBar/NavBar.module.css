@@ -1,0 +1,70 @@
+.navbar {
+    background-color: #015151;
+    background-image: linear-gradient(to right bottom,#015151,#005552,#005a52,#005e52,#006251,#006651,#006951,#026d50,#017250,#02774f,#057b4e,#0c804d);
+    color: white;
+    overflow: hidden;
+    padding-bottom: 130px;
+    margin: 0;
+    margin-bottom: -120px;
+}
+.upperNavContainer {
+    border-bottom: 1px solid #035847;
+}
+.logo {
+    width: 30px;
+    margin-right: 10px;
+    height: 38px;
+}
+
+.upperNav {
+    display: flex;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+.upperNavSpacer {
+    flex: 1
+}
+.upperNav p {
+    margin: 10px 5px;
+}
+
+.divider {
+    border-left: 2px solid white;
+    border-radius: 2px;
+    margin: 10px 10px;
+    width: 2px;
+}
+
+.navBarItem {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.navBarItem:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.selected, .selected:hover {
+    background-color: #013731
+}
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: App-logo-spin infinite 30s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation-delay: 60s;
+  }
+}
+@keyframes App-logo-spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  10% {
+    transform: rotate(340deg);
+  }
+  14% {
+    transform: rotate(0deg);
+  }
+}
