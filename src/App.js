@@ -1,16 +1,22 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import styles from './App.module.css';
 
-import LoginHooks from './components/LoginHooks';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
-export default function App() {
+import { AppScreen } from './components/AppScreen/appscreen';
+
+import { NavBar } from './components/NavBar/navbar';
+
+function App() {
   return (
     <Router>
-      <div className="navbar">
+      <NavBar />
+      <div className={styles.pageOuterContainer}>
+        <AppScreen />
         <Switch>
           <Route exact path="/">
-            <Home />
+            <Redirect to="/AppScreen" />
           </Route>
         </Switch>
       </div>
@@ -18,12 +24,4 @@ export default function App() {
   );
 }
 
-function Home() {
-  return (
-    <div className="App">
-      Welcome nomads
-      <LoginHooks />
-      {/* <LogoutHooks /> */}
-    </div>
-  );
-}
+export default App;
